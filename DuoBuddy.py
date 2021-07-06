@@ -12,7 +12,3 @@ user_information = info.get_user_info()
 full_name = user_information['fullname']
 
 print(full_name)
-
-#get user information lingo.get_user_info()
-
- 
