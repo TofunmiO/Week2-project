@@ -1,53 +1,21 @@
 import requests
 import duolingo
-import json
-import mysql.connector
-from mysql.connector import Error
 import sqlalchemy
 from sqlalchemy import create_engine
 import pandas as pd
 import os
 
-# base_url = 'https://www.duolingo.com/api/1' not working
 
 # function to get input from user
-
-
 def get_input():
     username = str(input("Username: "))
     password = str(input("Password: "))
-    return duolingo.Duolingo(username, password)
+    return username, password
 
 
-info = get_input()
-
-
-# function to connect to mysql server
-def connect_server(localhost, user_name, user_password):
-    connection = None
-    try:
-        connection = mysql.connector.connect(
-            host=host_name,
-            user=user_name,
-            passwd=user_password)
-        print("Connection successful")
-    except Error as err:
-        print(f"Error: '{err}'")
-    return connection
-
-# connect_server()
-
-
-# creating dataframe
-def get_df():
-    # creating data frame to add data to
-    col_names = ['id', 'username', 'XP', 'languages']
-    df = pd.DataFrame(columns=col_names)
-    df.loc[len(df.index)] = [1, 2, 3, 4]
-    return df
-
-
-df = get_df()
+x = get_input()
+info = duolingo.Duolingo(x[0], x[1])
+# print(info.get_user_info())
 
 
 def create_engine_function(users):
@@ -60,7 +28,7 @@ def get_user_info(info):
     full_name = user_information['fullname']
     # get user's full name
     print("User: ", full_name)
-    return None
+#     return None
 
 
 get_user_info(info)
@@ -70,7 +38,7 @@ get_user_info(info)
 def get_user_languages(info):
     languages = info.get_languages(abbreviations=False)
     print("Languages: ", languages)
-    return None
+#     return None
 
 
 get_user_languages(info)
@@ -83,10 +51,13 @@ def show_language_info(info):
     print('Level:', details['level'])
     print('Points:', details['points'])
     print('Streak:', details['streak'])
-    return None
+#     return None
 
 
 show_language_info(info)
+
+
+friends_info = info.get_friends()
 
 
 # function to show user's friends
@@ -107,6 +78,20 @@ def show_friends(info):
 
 
 show_friends(info)
+
+
+# creating dataframe
+def get_df(friends_info):
+    # creating data frame to add data to
+    col_names = ['id', 'username', 'points']
+    df = pd.DataFrame(columns=col_names)
+    for friend in friends_info:
+        df.loc[len(df.index)] = [friend['id'],
+                                 friend['username'], friend['points']]
+    return df
+
+
+df = get_df(friends_info)
 
 
 users = 'users'
