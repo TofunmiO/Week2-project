@@ -15,6 +15,9 @@ With the help of Paired Programming and Github, we were able to work simultaneou
 Elon Musk:
 > "When something is important enough, you do it even if the odds are not in your favor."
 
+### Blocker
+Duolingo has no official API documentation so we were limited in the amount of functionality we could have and use.
+
 ### Installation
 * Runs on python 2.7>
 * Run command "sudo pip3 install duolingo to begin"
