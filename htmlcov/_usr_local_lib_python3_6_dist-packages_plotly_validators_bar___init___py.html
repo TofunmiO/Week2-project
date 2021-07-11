@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for /usr/local/lib/python3.6/dist-packages/plotly/validators/bar/__init__.py: 97%</title>
+    <link rel="icon" sizes="32x32" href="favicon_32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>/usr/local/lib/python3.6/dist-packages/plotly/validators/bar/__init__.py</b> :
+            <span class="pc_cov">97%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <h2 class="stats">
+            75 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">73 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">2 missing</button>
+            <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
+        </h2>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+<div id="source">
+    <p id="t1" class="run"><span class="n"><a href="#t1">1</a></span><span class="t"><span class="key">import</span> <span class="nam">sys</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t2" class="pln"><span class="n"><a href="#t2">2</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t3" class="run"><span class="n"><a href="#t3">3</a></span><span class="t"><span class="key">if</span> <span class="nam">sys</span><span class="op">.</span><span class="nam">version_info</span> <span class="op">&lt;</span> <span class="op">(</span><span class="num">3</span><span class="op">,</span> <span class="num">7</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t4" class="run"><span class="n"><a href="#t4">4</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_ysrc</span> <span class="key">import</span> <span class="nam">YsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t5" class="run"><span class="n"><a href="#t5">5</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_yperiodalignment</span> <span class="key">import</span> <span class="nam">YperiodalignmentValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t6" class="run"><span class="n"><a href="#t6">6</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_yperiod0</span> <span class="key">import</span> <span class="nam">Yperiod0Validator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t7" class="run"><span class="n"><a href="#t7">7</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_yperiod</span> <span class="key">import</span> <span class="nam">YperiodValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_yhoverformat</span> <span class="key">import</span> <span class="nam">YhoverformatValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t9" class="run"><span class="n"><a href="#t9">9</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_ycalendar</span> <span class="key">import</span> <span class="nam">YcalendarValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_yaxis</span> <span class="key">import</span> <span class="nam">YaxisValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t11" class="run"><span class="n"><a href="#t11">11</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_y0</span> <span class="key">import</span> <span class="nam">Y0Validator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_y</span> <span class="key">import</span> <span class="nam">YValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xsrc</span> <span class="key">import</span> <span class="nam">XsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xperiodalignment</span> <span class="key">import</span> <span class="nam">XperiodalignmentValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xperiod0</span> <span class="key">import</span> <span class="nam">Xperiod0Validator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xperiod</span> <span class="key">import</span> <span class="nam">XperiodValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t17" class="run"><span class="n"><a href="#t17">17</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xhoverformat</span> <span class="key">import</span> <span class="nam">XhoverformatValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t18" class="run"><span class="n"><a href="#t18">18</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xcalendar</span> <span class="key">import</span> <span class="nam">XcalendarValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t19" class="run"><span class="n"><a href="#t19">19</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_xaxis</span> <span class="key">import</span> <span class="nam">XaxisValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="run"><span class="n"><a href="#t20">20</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_x0</span> <span class="key">import</span> <span class="nam">X0Validator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t21" class="run"><span class="n"><a href="#t21">21</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_x</span> <span class="key">import</span> <span class="nam">XValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_widthsrc</span> <span class="key">import</span> <span class="nam">WidthsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t23" class="run"><span class="n"><a href="#t23">23</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_width</span> <span class="key">import</span> <span class="nam">WidthValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t24" class="run"><span class="n"><a href="#t24">24</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_visible</span> <span class="key">import</span> <span class="nam">VisibleValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t25" class="run"><span class="n"><a href="#t25">25</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_unselected</span> <span class="key">import</span> <span class="nam">UnselectedValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t26" class="run"><span class="n"><a href="#t26">26</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_uirevision</span> <span class="key">import</span> <span class="nam">UirevisionValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t27" class="run"><span class="n"><a href="#t27">27</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_uid</span> <span class="key">import</span> <span class="nam">UidValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t28" class="run"><span class="n"><a href="#t28">28</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_texttemplatesrc</span> <span class="key">import</span> <span class="nam">TexttemplatesrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t29" class="run"><span class="n"><a href="#t29">29</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_texttemplate</span> <span class="key">import</span> <span class="nam">TexttemplateValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t30" class="run"><span class="n"><a href="#t30">30</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_textsrc</span> <span class="key">import</span> <span class="nam">TextsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t31" class="run"><span class="n"><a href="#t31">31</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_textpositionsrc</span> <span class="key">import</span> <span class="nam">TextpositionsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t32" class="run"><span class="n"><a href="#t32">32</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_textposition</span> <span class="key">import</span> <span class="nam">TextpositionValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t33" class="run"><span class="n"><a href="#t33">33</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_textfont</span> <span class="key">import</span> <span class="nam">TextfontValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t34" class="run"><span class="n"><a href="#t34">34</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_textangle</span> <span class="key">import</span> <span class="nam">TextangleValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t35" class="run"><span class="n"><a href="#t35">35</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_text</span> <span class="key">import</span> <span class="nam">TextValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t36" class="run"><span class="n"><a href="#t36">36</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_stream</span> <span class="key">import</span> <span class="nam">StreamValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t37" class="run"><span class="n"><a href="#t37">37</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_showlegend</span> <span class="key">import</span> <span class="nam">ShowlegendValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t38" class="run"><span class="n"><a href="#t38">38</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_selectedpoints</span> <span class="key">import</span> <span class="nam">SelectedpointsValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t39" class="run"><span class="n"><a href="#t39">39</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_selected</span> <span class="key">import</span> <span class="nam">SelectedValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t40" class="run"><span class="n"><a href="#t40">40</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_outsidetextfont</span> <span class="key">import</span> <span class="nam">OutsidetextfontValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t41" class="run"><span class="n"><a href="#t41">41</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_orientation</span> <span class="key">import</span> <span class="nam">OrientationValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t42" class="run"><span class="n"><a href="#t42">42</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_opacity</span> <span class="key">import</span> <span class="nam">OpacityValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t43" class="run"><span class="n"><a href="#t43">43</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_offsetsrc</span> <span class="key">import</span> <span class="nam">OffsetsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t44" class="run"><span class="n"><a href="#t44">44</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_offsetgroup</span> <span class="key">import</span> <span class="nam">OffsetgroupValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t45" class="run"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_offset</span> <span class="key">import</span> <span class="nam">OffsetValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t46" class="run"><span class="n"><a href="#t46">46</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_name</span> <span class="key">import</span> <span class="nam">NameValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t47" class="run"><span class="n"><a href="#t47">47</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_metasrc</span> <span class="key">import</span> <span class="nam">MetasrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t48" class="run"><span class="n"><a href="#t48">48</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_meta</span> <span class="key">import</span> <span class="nam">MetaValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t49" class="run"><span class="n"><a href="#t49">49</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_marker</span> <span class="key">import</span> <span class="nam">MarkerValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t50" class="run"><span class="n"><a href="#t50">50</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_legendrank</span> <span class="key">import</span> <span class="nam">LegendrankValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t51" class="run"><span class="n"><a href="#t51">51</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_legendgrouptitle</span> <span class="key">import</span> <span class="nam">LegendgrouptitleValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t52" class="run"><span class="n"><a href="#t52">52</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_legendgroup</span> <span class="key">import</span> <span class="nam">LegendgroupValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_insidetextfont</span> <span class="key">import</span> <span class="nam">InsidetextfontValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_insidetextanchor</span> <span class="key">import</span> <span class="nam">InsidetextanchorValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t55" class="run"><span class="n"><a href="#t55">55</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_idssrc</span> <span class="key">import</span> <span class="nam">IdssrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_ids</span> <span class="key">import</span> <span class="nam">IdsValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="run"><span class="n"><a href="#t57">57</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hovertextsrc</span> <span class="key">import</span> <span class="nam">HovertextsrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hovertext</span> <span class="key">import</span> <span class="nam">HovertextValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hovertemplatesrc</span> <span class="key">import</span> <span class="nam">HovertemplatesrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hovertemplate</span> <span class="key">import</span> <span class="nam">HovertemplateValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="run"><span class="n"><a href="#t61">61</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hoverlabel</span> <span class="key">import</span> <span class="nam">HoverlabelValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t62" class="run"><span class="n"><a href="#t62">62</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hoverinfosrc</span> <span class="key">import</span> <span class="nam">HoverinfosrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t63" class="run"><span class="n"><a href="#t63">63</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_hoverinfo</span> <span class="key">import</span> <span class="nam">HoverinfoValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t64" class="run"><span class="n"><a href="#t64">64</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_error_y</span> <span class="key">import</span> <span class="nam">Error_YValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t65" class="run"><span class="n"><a href="#t65">65</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_error_x</span> <span class="key">import</span> <span class="nam">Error_XValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t66" class="run"><span class="n"><a href="#t66">66</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_dy</span> <span class="key">import</span> <span class="nam">DyValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t67" class="run"><span class="n"><a href="#t67">67</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_dx</span> <span class="key">import</span> <span class="nam">DxValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t68" class="run"><span class="n"><a href="#t68">68</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_customdatasrc</span> <span class="key">import</span> <span class="nam">CustomdatasrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t69" class="run"><span class="n"><a href="#t69">69</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_customdata</span> <span class="key">import</span> <span class="nam">CustomdataValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t70" class="run"><span class="n"><a href="#t70">70</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_constraintext</span> <span class="key">import</span> <span class="nam">ConstraintextValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t71" class="run"><span class="n"><a href="#t71">71</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_cliponaxis</span> <span class="key">import</span> <span class="nam">CliponaxisValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t72" class="run"><span class="n"><a href="#t72">72</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_basesrc</span> <span class="key">import</span> <span class="nam">BasesrcValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_base</span> <span class="key">import</span> <span class="nam">BaseValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t74" class="run"><span class="n"><a href="#t74">74</a></span><span class="t">    <span class="key">from</span> <span class="op">.</span><span class="nam">_alignmentgroup</span> <span class="key">import</span> <span class="nam">AlignmentgroupValidator</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t75" class="pln"><span class="n"><a href="#t75">75</a></span><span class="t"><span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t76" class="mis show_mis"><span class="n"><a href="#t76">76</a></span><span class="t">    <span class="key">from</span> <span class="nam">_plotly_utils</span><span class="op">.</span><span class="nam">importers</span> <span class="key">import</span> <span class="nam">relative_import</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t77" class="pln"><span class="n"><a href="#t77">77</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t78" class="mis show_mis"><span class="n"><a href="#t78">78</a></span><span class="t">    <span class="nam">__all__</span><span class="op">,</span> <span class="nam">__getattr__</span><span class="op">,</span> <span class="nam">__dir__</span> <span class="op">=</span> <span class="nam">relative_import</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t79" class="pln"><span class="n"><a href="#t79">79</a></span><span class="t">        <span class="nam">__name__</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">        <span class="op">[</span><span class="op">]</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t81" class="pln"><span class="n"><a href="#t81">81</a></span><span class="t">        <span class="op">[</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t82" class="pln"><span class="n"><a href="#t82">82</a></span><span class="t">            <span class="str">"._ysrc.YsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t83" class="pln"><span class="n"><a href="#t83">83</a></span><span class="t">            <span class="str">"._yperiodalignment.YperiodalignmentValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t84" class="pln"><span class="n"><a href="#t84">84</a></span><span class="t">            <span class="str">"._yperiod0.Yperiod0Validator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t85" class="pln"><span class="n"><a href="#t85">85</a></span><span class="t">            <span class="str">"._yperiod.YperiodValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t86" class="pln"><span class="n"><a href="#t86">86</a></span><span class="t">            <span class="str">"._yhoverformat.YhoverformatValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t87" class="pln"><span class="n"><a href="#t87">87</a></span><span class="t">            <span class="str">"._ycalendar.YcalendarValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t88" class="pln"><span class="n"><a href="#t88">88</a></span><span class="t">            <span class="str">"._yaxis.YaxisValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t89" class="pln"><span class="n"><a href="#t89">89</a></span><span class="t">            <span class="str">"._y0.Y0Validator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="pln"><span class="n"><a href="#t90">90</a></span><span class="t">            <span class="str">"._y.YValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t91" class="pln"><span class="n"><a href="#t91">91</a></span><span class="t">            <span class="str">"._xsrc.XsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t92" class="pln"><span class="n"><a href="#t92">92</a></span><span class="t">            <span class="str">"._xperiodalignment.XperiodalignmentValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="pln"><span class="n"><a href="#t93">93</a></span><span class="t">            <span class="str">"._xperiod0.Xperiod0Validator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t94" class="pln"><span class="n"><a href="#t94">94</a></span><span class="t">            <span class="str">"._xperiod.XperiodValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t95" class="pln"><span class="n"><a href="#t95">95</a></span><span class="t">            <span class="str">"._xhoverformat.XhoverformatValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t96" class="pln"><span class="n"><a href="#t96">96</a></span><span class="t">            <span class="str">"._xcalendar.XcalendarValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t97" class="pln"><span class="n"><a href="#t97">97</a></span><span class="t">            <span class="str">"._xaxis.XaxisValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t98" class="pln"><span class="n"><a href="#t98">98</a></span><span class="t">            <span class="str">"._x0.X0Validator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t99" class="pln"><span class="n"><a href="#t99">99</a></span><span class="t">            <span class="str">"._x.XValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t100" class="pln"><span class="n"><a href="#t100">100</a></span><span class="t">            <span class="str">"._widthsrc.WidthsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t101" class="pln"><span class="n"><a href="#t101">101</a></span><span class="t">            <span class="str">"._width.WidthValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t102" class="pln"><span class="n"><a href="#t102">102</a></span><span class="t">            <span class="str">"._visible.VisibleValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t103" class="pln"><span class="n"><a href="#t103">103</a></span><span class="t">            <span class="str">"._unselected.UnselectedValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t104" class="pln"><span class="n"><a href="#t104">104</a></span><span class="t">            <span class="str">"._uirevision.UirevisionValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t105" class="pln"><span class="n"><a href="#t105">105</a></span><span class="t">            <span class="str">"._uid.UidValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t106" class="pln"><span class="n"><a href="#t106">106</a></span><span class="t">            <span class="str">"._texttemplatesrc.TexttemplatesrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t107" class="pln"><span class="n"><a href="#t107">107</a></span><span class="t">            <span class="str">"._texttemplate.TexttemplateValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t108" class="pln"><span class="n"><a href="#t108">108</a></span><span class="t">            <span class="str">"._textsrc.TextsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t109" class="pln"><span class="n"><a href="#t109">109</a></span><span class="t">            <span class="str">"._textpositionsrc.TextpositionsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t110" class="pln"><span class="n"><a href="#t110">110</a></span><span class="t">            <span class="str">"._textposition.TextpositionValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t111" class="pln"><span class="n"><a href="#t111">111</a></span><span class="t">            <span class="str">"._textfont.TextfontValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t112" class="pln"><span class="n"><a href="#t112">112</a></span><span class="t">            <span class="str">"._textangle.TextangleValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t113" class="pln"><span class="n"><a href="#t113">113</a></span><span class="t">            <span class="str">"._text.TextValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t114" class="pln"><span class="n"><a href="#t114">114</a></span><span class="t">            <span class="str">"._stream.StreamValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t115" class="pln"><span class="n"><a href="#t115">115</a></span><span class="t">            <span class="str">"._showlegend.ShowlegendValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t116" class="pln"><span class="n"><a href="#t116">116</a></span><span class="t">            <span class="str">"._selectedpoints.SelectedpointsValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t117" class="pln"><span class="n"><a href="#t117">117</a></span><span class="t">            <span class="str">"._selected.SelectedValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t118" class="pln"><span class="n"><a href="#t118">118</a></span><span class="t">            <span class="str">"._outsidetextfont.OutsidetextfontValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t119" class="pln"><span class="n"><a href="#t119">119</a></span><span class="t">            <span class="str">"._orientation.OrientationValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t120" class="pln"><span class="n"><a href="#t120">120</a></span><span class="t">            <span class="str">"._opacity.OpacityValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t121" class="pln"><span class="n"><a href="#t121">121</a></span><span class="t">            <span class="str">"._offsetsrc.OffsetsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t122" class="pln"><span class="n"><a href="#t122">122</a></span><span class="t">            <span class="str">"._offsetgroup.OffsetgroupValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t123" class="pln"><span class="n"><a href="#t123">123</a></span><span class="t">            <span class="str">"._offset.OffsetValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t124" class="pln"><span class="n"><a href="#t124">124</a></span><span class="t">            <span class="str">"._name.NameValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t125" class="pln"><span class="n"><a href="#t125">125</a></span><span class="t">            <span class="str">"._metasrc.MetasrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t126" class="pln"><span class="n"><a href="#t126">126</a></span><span class="t">            <span class="str">"._meta.MetaValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t127" class="pln"><span class="n"><a href="#t127">127</a></span><span class="t">            <span class="str">"._marker.MarkerValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t128" class="pln"><span class="n"><a href="#t128">128</a></span><span class="t">            <span class="str">"._legendrank.LegendrankValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t129" class="pln"><span class="n"><a href="#t129">129</a></span><span class="t">            <span class="str">"._legendgrouptitle.LegendgrouptitleValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t130" class="pln"><span class="n"><a href="#t130">130</a></span><span class="t">            <span class="str">"._legendgroup.LegendgroupValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t131" class="pln"><span class="n"><a href="#t131">131</a></span><span class="t">            <span class="str">"._insidetextfont.InsidetextfontValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t132" class="pln"><span class="n"><a href="#t132">132</a></span><span class="t">            <span class="str">"._insidetextanchor.InsidetextanchorValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t133" class="pln"><span class="n"><a href="#t133">133</a></span><span class="t">            <span class="str">"._idssrc.IdssrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t134" class="pln"><span class="n"><a href="#t134">134</a></span><span class="t">            <span class="str">"._ids.IdsValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t135" class="pln"><span class="n"><a href="#t135">135</a></span><span class="t">            <span class="str">"._hovertextsrc.HovertextsrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t136" class="pln"><span class="n"><a href="#t136">136</a></span><span class="t">            <span class="str">"._hovertext.HovertextValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t137" class="pln"><span class="n"><a href="#t137">137</a></span><span class="t">            <span class="str">"._hovertemplatesrc.HovertemplatesrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t138" class="pln"><span class="n"><a href="#t138">138</a></span><span class="t">            <span class="str">"._hovertemplate.HovertemplateValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t139" class="pln"><span class="n"><a href="#t139">139</a></span><span class="t">            <span class="str">"._hoverlabel.HoverlabelValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t140" class="pln"><span class="n"><a href="#t140">140</a></span><span class="t">            <span class="str">"._hoverinfosrc.HoverinfosrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t141" class="pln"><span class="n"><a href="#t141">141</a></span><span class="t">            <span class="str">"._hoverinfo.HoverinfoValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t142" class="pln"><span class="n"><a href="#t142">142</a></span><span class="t">            <span class="str">"._error_y.Error_YValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t143" class="pln"><span class="n"><a href="#t143">143</a></span><span class="t">            <span class="str">"._error_x.Error_XValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t144" class="pln"><span class="n"><a href="#t144">144</a></span><span class="t">            <span class="str">"._dy.DyValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t145" class="pln"><span class="n"><a href="#t145">145</a></span><span class="t">            <span class="str">"._dx.DxValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t146" class="pln"><span class="n"><a href="#t146">146</a></span><span class="t">            <span class="str">"._customdatasrc.CustomdatasrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t147" class="pln"><span class="n"><a href="#t147">147</a></span><span class="t">            <span class="str">"._customdata.CustomdataValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t148" class="pln"><span class="n"><a href="#t148">148</a></span><span class="t">            <span class="str">"._constraintext.ConstraintextValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t149" class="pln"><span class="n"><a href="#t149">149</a></span><span class="t">            <span class="str">"._cliponaxis.CliponaxisValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t150" class="pln"><span class="n"><a href="#t150">150</a></span><span class="t">            <span class="str">"._basesrc.BasesrcValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t151" class="pln"><span class="n"><a href="#t151">151</a></span><span class="t">            <span class="str">"._base.BaseValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t152" class="pln"><span class="n"><a href="#t152">152</a></span><span class="t">            <span class="str">"._alignmentgroup.AlignmentgroupValidator"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t153" class="pln"><span class="n"><a href="#t153">153</a></span><span class="t">        <span class="op">]</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t154" class="pln"><span class="n"><a href="#t154">154</a></span><span class="t">    <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
+            created at 2021-07-11 05:28 +0000
+        </p>
+    </div>
+</div>
+</body>
+</html>
